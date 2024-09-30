@@ -1,0 +1,34 @@
+---
+import Section from "../Section.astro"
+import { work } from "@cv"
+---
+
+<Section title="Expreriencia">
+  <ul class="flex gap-4 flex-col">
+    {
+      work.map(({ name, startDate, endDate, position, summary, url, highlights}) => {
+        const startYear = new Date(startDate).getFullYear()
+        const start = `${new Date(startDate).toLocaleString('default', { month: 'long' })} ${startYear}`
+        const endYear = endDate !== null ? new Date(endDate).getFullYear() : 'Actual'
+        const end = endDate !== null ? `${new Date(endDate).toLocaleString('default', { month: 'long' })} ${endYear}` : endYear
+        const years = `${start} - ${end}`
+        return (
+          <li>
+            <article>
+              <header class="flex justify-between items-start">
+                <section>
+                  <h3 class=" font-medium text-[#111]">{name}</h3>
+                  <h4 class=" font-normal text-[#222]">{position}</h4>
+                </section>
+                <time class="text-[#555] text-sm">{years}</time>
+              </header>
+              <footer>
+                <p>{summary}</p>
+              </footer>
+            </article>
+          </li>
+        )
+      })
+    }
+  </ul>
+</Section>

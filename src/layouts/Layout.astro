@@ -1,0 +1,46 @@
+---
+import Footer from "../components/Footer.astro";
+import '../styles/global.css';
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="title" content={title} />
+		<meta name="generator" content={Astro.generator} />
+		<link id="favicon" rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+		<Footer />
+	</body>
+</html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const setFavicon = (theme) => {
+      const favicon = document.getElementById('favicon');
+      if (favicon) {
+        if (theme === 'dark') {
+          favicon.href = '/favicon-light.svg';
+        } else {
+          favicon.href = '/favicon-dark.svg';
+        }
+      }
+    };
+
+    const matchMediaDark = window.matchMedia('(prefers-color-scheme: dark)');
+    setFavicon(matchMediaDark.matches ? 'dark' : 'light'); // Set on page load
+
+    // Listen for changes
+    matchMediaDark.addEventListener('change', (e) => {
+      setFavicon(e.matches ? 'dark' : 'light');
+    });
+  });
+</script>

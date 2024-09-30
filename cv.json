@@ -1,0 +1,349 @@
+{
+  "basics": {
+    "name": "Wilfredo Baca",
+    "label": "Estudiante de cuarto año de Ingeniería en Sistemas en la UNAH",
+    "image": "./me.jpg",
+    "email": "wilfredo.dev99@gmail.com",
+    "phone": "(504) 97405071",
+    "url": "https://wilfredo.dev",
+    "summary": "Programador Full Stack con experiencia en el desarrollo de aplicaciones web. Apasionado por la tecnología y la programación. Me gusta aprender cosas nuevas y enfrentar desafíos. Siempre dispuesto a ayudar a los demás y a trabajar en equipo.",
+    "languages": ["Español"],
+    "location": {
+      "address": "Colonia Brisas del Norte",
+      "postalCode": "21100",
+      "city": "Tegucigalpa",
+      "countryCode": "HN",
+      "region": "Francisco Morazán"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "Wilfredo-Baca",
+        "url": "https://github.com/Wilfredo-Baca",
+        "qr": "./qrs/GithubQr.svg"
+      },
+      {
+        "network": "Linkedin",
+        "username": "Wilfredo Baca",
+        "url": "https://www.linkedin.com/in/wilfredo-baca/",
+        "qr": "./qrs/LinkedinQr.svg"
+      },
+      {
+        "network": "Twitter",
+        "username": "Wilfredocbp",
+        "url": "https://x.com/wibadev",
+        "qr": "./qrs/TwitterQr.svg"
+      },
+      {
+        "network": "Telegram",
+        "username": "Wilfredo Baca",
+        "url": "https://t.me/WilfredoDev99",
+        "qr": "./qrs/TelegramQr.svg"
+      },
+      {
+        "network": "WhatsApp",
+        "username": "Wilfredo Baca",
+        "url": "https://wa.me/50497405071",
+        "qr": "./qrs/WhatsAppQr.svg"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Clase: Programación Orientada a Objetos",
+      "position": "Estudiante",
+      "url": "",
+      "startDate": "2021-01-27",
+      "endDate": "2021-04-30",
+      "summary": "Clase en la UNAH, programe en JavaScript, Html, Css y Php el backend con archivos Json de una aplicación web. de Delivery de Comida. una app para el cliente, una app para el repartidor y una app para el administrador.",
+      "highlights": [
+        "Programación en JavaScript",
+        "Programación en Html",
+        "Programación en Css",
+        "Programación en Php",
+        "Programación en Json"
+      ]
+    },
+    {
+      "name": "Clase: Base de Datos I",
+      "position": "Estudiante",
+      "url": "",
+      "startDate": "2021-05-15",
+      "endDate": "2021-08-10",
+      "summary": "Clase en la UNAH, diseñe, normalice y programe bases de datos en Microsoft SQL Server para una aplicación de venta y compra de vehículos.",
+      "highlights": [
+        "Diseño de Bases de Datos",
+        "Normalización de BD",
+        "Microsoft SQL Server"
+      ]
+    },
+    {
+      "name": "Clase: Base de Datos II",
+      "position": "Estudiante",
+      "url": "",
+      "startDate": "2021-08-22",
+      "endDate": "2021-12-15",
+      "summary": "Clase en la UNAH, diseñe, normalice y programe bases de datos en Oracle Database para crear un datawarehouse de una empresa de ventas",
+      "highlights": [
+        "Diseño de Bases de Datos",
+        "Normalización de BD",
+        "Microsoft SQL Server"
+      ]
+    },
+    {
+      "name": "Clase: Inteligencia Artificial",
+      "position": "Estudiante",
+      "url": "",
+      "startDate": "2022-01-27",
+      "endDate": "2022-04-30",
+      "summary": "Clase en la UNAH, programe en Python algoritmos de Machine Learning y Deep Learning para predecir el precio de casas dados ciertos atributos.",
+      "highlights": [
+        "Programación en Python",
+        "Machine Learning",
+        "Deep Learning"
+      ]
+    },
+    {
+      "name": "Clase: Ingeniería de Software",
+      "position": "Estudiante",
+      "url": "",
+      "startDate": "2022-05-15",
+      "endDate": "2022-08-10",
+      "summary": "Clase en la UNAH, diseñe, programe y documente un sistema de ventas de una tienda en linea. Utilice metodologías ágiles para el desarrollo del proyecto. es decir Scrum.",
+      "highlights": [
+        "Diseño de Software",
+        "Programación de Software",
+        "Documentación de Software",
+        "Metodologías Ágiles",
+        "Scrum"
+      ]
+    },
+    {
+      "name": "Clase: Sistemas Expertos",
+      "position": "Estudiante",
+      "url": "",
+      "startDate": "2022-08-22",
+      "endDate": "2022-12-15",
+      "summary": "Clase en la UNAH, cree un proyecto desde cero. La arquitectura, el diseño, la base de datos, la programación y la documentación. Utilice terraform para la infraestructura y docker para los contenedores. El proyecto lo desplegue en Azure.",
+      "highlights": [
+        "Arquitectura de Proyectos",
+        "Diseño de Proyectos",
+        "Base de Datos",
+        "Programación de Proyectos",
+        "Documentación de Proyectos",
+        "Infraestructura",
+        "Contenedores",
+        "Despliegue en Azure"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": ["Awarded 'Volunteer of the Month'"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Nacional Autónoma de Honduras",
+      "url": "https://www.unah.edu.hn/",
+      "area": "Ingeniería en Sistemas",
+      "studyType": "Bachelor",
+      "startDate": "2020-27-01",
+      "endDate": "2025-15-12",
+      "score": "56",
+      "courses": [""]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "JavaScript",
+      "level": "Avanzado",
+      "keywords": ["ES6", "Desarrollo Web", "Frontend", "Programación"]
+    },
+    {
+      "name": "HTML5",
+      "level": "Avanzado",
+      "keywords": ["HTML5", "Desarrollo Web", "Frontend", "Maquetación"]
+    },
+    {
+      "name": "CSS3",
+      "level": "Avanzado",
+      "keywords": ["CSS3", "Desarrollo Web", "Frontend", "Estilos"]
+    },
+    {
+      "name": "PHP",
+      "level": "Intermedio",
+      "keywords": ["POO", "Desarrollo Web", "Backend", "Programación"]
+    },
+    {
+      "name": "SQL",
+      "level": "Intermedio",
+      "keywords": ["Microsoft SQL Server", "Oracle Database", "MySQL", "PostgreSQL"]
+    },
+    {
+      "name": "Python",
+      "level": "Intermedio",
+      "keywords": ["Machine Learning", "Deep Learning", "Data Science", "Programación"]
+    },
+    {
+      "name": "Java",
+      "level": "Básico",
+      "keywords": ["POO", "Programación", "Backend", "Android"]
+    },
+    {
+      "name": "C#",
+      "level": "Básico",
+      "keywords": ["POO", "Programación", "Backend", "Unity"]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": ["Control de Versiones", "GitHub", "GitLab", "Bitbucket"]
+    },
+    {
+      "name": "Docker",
+      "level": "Intermedio",
+      "keywords": ["Contenedores", "Despliegue", "Infraestructura", "DevOps"]
+    },
+    {
+      "name": "Azure",
+      "level": "Intermedio",
+      "keywords": ["Infraestructura", "Despliegue", "Servicios", "Cloud"]
+    },
+    {
+      "name": "Terraform",
+      "level": "Intermedio",
+      "keywords": ["Infraestructura", "Despliegue", "Contenedores", "DevOps"]
+    },
+    {
+      "name": "React.js",
+      "level": "Intermedio",
+      "keywords": ["Componentes", "Desarrollo Web", "Frontend", "Programación"]
+    },
+    {
+      "name": "Node.js",
+      "level": "Intermedio",
+      "keywords": ["Servidor", "Desarrollo Web", "Backend", "Programación"]
+    },
+    {
+      "name": "Microsoft SQL Server",
+      "level": "Intermedio",
+      "keywords": ["Base de Datos", "SQL", "Microsoft", "Programación"]
+    },
+    {
+      "name": "Oracle Database",
+      "level": "Intermedio",
+      "keywords": ["Base de Datos", "SQL", "Oracle", "Programación"]
+    },
+    {
+      "name": "MySQL",
+      "level": "Intermedio",
+      "keywords": ["Base de Datos", "SQL", "MySQL", "Programación"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": ["Ferrets", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Simulación de Vacunación Covid-19",
+      "isActive": false,
+      "startDate": "2021-03-01",
+      "endDate": "2021-03-30",
+      "description": "Proyecto de Programación II. Simulación de vacunación del Covid-19 con Java en consola. Se utilizó el patrón Singleton para crear la población y el patrón Factory para las vacunas. Se implementaron colas de prioridad para la vacunación y pilas para almacenar las vacunas.",
+      "highlights": ["Java", "Patrón de Diseño Singleton", "Patrón de Diseño Factory", "Estructuras de Datos", "Colas", "Pilas", "Programación de Consola"],
+      "url": ""
+    },
+    {
+      "name": "Star Shop",
+      "isActive": false,
+      "startDate": "2022-02-04",
+      "endDate": "2022-05-15",
+      "description": "Proyecto de la clase Programación Orientada a Objetos. Aplicación web de Delivery de Comida (movil), Aplicación web de Repartidor (movil) y Aplicación web de Administrador (escritorio). Programe en JavaScript, Html, Css y el backend Php con archivos Json.",
+      "highlights": ["JavaScript", "Html", "Css", "Php", "Json", "Diseño de Interfaces", "programación Web", "Responsive", "Programación de Backend"],
+      "url": ""
+    },
+    {
+      "name": "Datawarehouse",
+      "isActive": false,
+      "startDate": "2024-08-01",
+      "endDate": "2024-09-25",
+      "description": "Proyecto de Base de Datos II. Datawarehouse para una empresa de ventas. Se diseñaron, normalizaron y programaron bases de datos en Oracle Database. Se creó un datawarehouse y se programó la extracción, transformación y carga (ETL) de los datos.",
+      "highlights": ["Diseño de Bases de Datos", "Normalización de BD", "Oracle Database", "Datawarehouse", "Extracción de Datos", "Transformación de Datos", "Carga de Datos"],
+      "url": ""
+    },
+    {
+      "name": "Predicción de Precios de Casas",
+      "isActive": false,
+      "startDate": "2025-01-01",
+      "endDate": "2025-02-25",
+      "description": "Proyecto de la clase de Inteligencia Artificial. Programe en Python algoritmos de Machine Learning y Deep Learning para predecir el precio de casas dados ciertos atributos. Se utilizaron algoritmos de regresión lineal, regresión polinomial y redes neuronales.",
+      "highlights": ["Programación en Python", "Machine Learning", "Deep Learning", "Predicción de Precios", "Regresión Lineal", "Regresión Polinomial", "Redes Neuronales"],
+      "url": ""
+    },
+    {
+      "name": "Compra Venta",
+      "isActive": false,
+      "startDate": "2024-03-01",
+      "endDate": "2024-04-25",
+      "description": "Proyecto de la clase Ingeniería de Software. Sistema de ventas de una tienda en linea. Diseñe, programe y documente el sistema. Utilice metodologías ágiles para el desarrollo del proyecto. es decir Scrum. frontend con React, backend con Node.js y base de datos con Microsoft SQL Server.",
+      "highlights": ["Documentación", "Metodologías Ágiles", "Scrum", "programación Web", "Responsive", "Diseño de Interfaces", "Base de Datos", "Programación en React", "Programación en Node.js", "Microsoft SQL Server"],
+      "url": ""
+    },
+    {
+      "name": "Smart Wallet",
+      "isActive": false,
+      "startDate": "2024-05-24",
+      "endDate": "2024-08-15",
+      "description": "Proyecto de Sistemas Expertos. Sistema de control de ingresos y egresos vinculado a cuentas bancarias y tarjetas mediante la API de Plaid. Se desarrolló desde cero, incluyendo la arquitectura, diseño, base de datos, programación y documentación. Se usó Terraform para la infraestructura, Docker, y se desplegó en Azure.",
+      "highlights": ["Arquitectura de Proyectos", "Diseño de Proyectos", "Base de Datos", "Programación de Proyectos", "Documentación de Proyectos", "Infraestructura", "Docker", "Despliegue en Azure", "RESTful API", "Plaid"],
+      "url": "https://smart-wallet-70l.pages.dev/"
+    }
+  ]
+}

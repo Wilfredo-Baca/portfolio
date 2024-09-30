@@ -1,0 +1,164 @@
+---
+import { basics } from "@cv";
+import Section from "@/components/Section.astro";
+const { name, label, image, location, profiles, phone, email } = basics;
+const { city, region } = location;
+
+// icons to be imported
+import Mail from "@/icons/Mail.astro";
+import Phone from "@/icons/Phone.astro";
+import Github from "@/icons/Github.astro";
+import Linkedin from "@/icons/Linkedin.astro";
+import Twitter from "@/icons/Twitter.astro";
+import Telegram from "@/icons/Telegram.astro";
+import WhatsApp from "@/icons/WhatsApp.astro";
+import World from "@/icons/World.astro";
+import Tongue from "@/icons/Tongue.astro";
+
+// Social media icons
+const SOCIAL_ICONS = {
+  Github,
+  Linkedin,
+  Twitter,
+  Telegram,
+  WhatsApp,
+};
+---
+
+<Section>
+  <div class="flex justify-between gap-4 flex-wrap">
+    <div class="flex flex-col w-full">
+      <section class="flex w-full">
+        <div class="text-wrap w-full">
+          <h1 class="text-3xl">{name}</h1>
+          <h2 class="text-[#646464] font-medium text-lg">
+            {label}
+          </h2>
+          <span
+            class="flex text-[#777] items-center gap-1 text-sm tracking-wide"
+          >
+            <World />
+            {city}, {region}
+          </span>
+          <span
+            class="flex text-[#777] items-center gap-1 text-sm tracking-wide"
+          >
+            <Mail />
+            {email}
+          </span>
+          <span
+            class="flex text-[#777] items-center gap-1 text-sm tracking-wide"
+          >
+            <Tongue />
+            Español (nativo)
+          </span>
+        </div>
+        <figure>
+          <img
+            src={image}
+            alt={name}
+            class="aspect-square object-cover min-w-32 w-32 rounded-md"
+          />
+        </figure>
+      </section>
+      <footer
+        class="flex flex-wrap gap-1 -mb-2 *:text-[#535353] *:inline-flex *:items-center *:justify-center *:border-2 *:border-solid *:border-[#868686] *:rounded *:w-7 *:h-7 *:transition-all *:duration-300 *:ease-in hover:*:border-[#535353] hover:*:text-[#535353] hover:*:bg-[#dfdfdf] noPrint"
+      >
+        <a
+          href={`mailto:${email}`}
+          title={`Enviar un correo a ${name} a la dirección ${email}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Mail />
+        </a>
+        <a href={`tel:${phone}`} title={`Llamar a ${name} al número ${phone}`}>
+          <Phone />
+        </a>
+        {
+          profiles.map(({ network, url, username }) => {
+            const Icon = SOCIAL_ICONS[network];
+            return (
+              <a
+                href={url}
+                title={`Visitar el ${network} de ${name}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Icon />
+              </a>
+            );
+          })
+        }
+        <div class="px-9 text-nowrap noPrint">
+          <button title="Imprimir el currículum" onclick="window.print()">
+            Imprimir
+          </button>
+        </div>
+        <div class="px-12 text-nowrap noPrint" id="toggleButton">
+          <button title="Mostrar codigos QR de Redes Sociales">
+            Mostrar QRs
+          </button>
+        </div>
+      </footer>
+      <div
+        class="print mt-3 -ml-1 flex-wrap justify-center QRsHidden transition-all duration-300 ease-in-out transform"
+        id="QRs"
+      >
+        {
+          profiles.map(({ qr }) => {
+            return <img class="socialQr -mx-2.5" src={qr} alt={`${qr}`} />;
+          })
+        }
+      </div>
+    </div>
+  </div>
+</Section>
+
+<style>
+  .QRsHidden {
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    overflow: hidden;
+  }
+  .QRsFlex {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .socialQr {
+    width: 150px;
+    height: auto;
+    clip-path: inset(0 13px 0 15px);
+    border-radius: 27px;
+  }
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* .print {
+    display: none;
+  } */
+  @media print {
+    .noPrint {
+      display: none;
+    }
+    .print {
+      display: flex;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+<script>
+  document
+    .getElementById("toggleButton")
+    ?.addEventListener("click", function () {
+      const qrSection = document.getElementById("QRs");
+      qrSection?.classList.toggle("QRsHidden");
+      qrSection?.classList.toggle("flex");
+    });
+</script>

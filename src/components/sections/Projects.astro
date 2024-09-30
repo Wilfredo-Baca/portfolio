@@ -1,0 +1,63 @@
+---
+import Section from "../Section.astro";
+import { projects } from "@cv";
+---
+
+<Section title="Proyectos">
+  <ul class="grid gap-4 mt-4">
+    {
+      projects.map(
+        ({
+          name,
+          isActive,
+          startDate,
+          endDate,
+          description,
+          highlights,
+          url,
+        }) => {
+          return (
+            <li>
+              <article class="flex flex-col rounded-lg border border-gray-400 border-solid gap-4 p-4 h-full">
+                <header class="flex-1 m-0">
+                  <h3 class="flex justify-between font-bold">
+                    {name}
+                    {/* {isActive ? (
+                      <span class="text-green-500 text-xs">🟢</span>
+                    ) : (
+                      <span class="text-red-500 text-xs">🔴</span>
+                    )} */}
+                  </h3>
+                  <p class="text-xs">{description}</p>
+                </header>
+                <footer class="flex flex-wrap gap-1 text-xs m-0">
+                  <p class="w-full font-bold">
+                    {startDate} - {endDate}
+                  </p>
+                  {highlights.map((highlight) => {
+                    return (
+                      <span class="rounded-md bg-slate-600 text-white py-0 px-2">
+                        {highlight}
+                      </span>
+                    );
+                  })}
+                </footer>
+                {isActive && <a href={url} 
+                    class="bg-green-600 text-white py-2 px-4 text-center rounded-md m-0" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >Ver Proyecto</a>}
+              </article>
+            </li>
+          );
+        }
+      )
+    }
+  </ul></Section
+>
+
+<style>
+  ul {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+</style>
