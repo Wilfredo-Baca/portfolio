@@ -214,21 +214,6 @@
       "keywords": ["Control de Versiones", "GitHub", "GitLab", "Bitbucket"]
     },
     {
-      "name": "Docker",
-      "level": "Intermedio",
-      "keywords": ["Contenedores", "Despliegue", "Infraestructura", "DevOps"]
-    },
-    {
-      "name": "Azure",
-      "level": "Intermedio",
-      "keywords": ["Infraestructura", "Despliegue", "Servicios", "Cloud"]
-    },
-    {
-      "name": "Terraform",
-      "level": "Intermedio",
-      "keywords": ["Infraestructura", "Despliegue", "Contenedores", "DevOps"]
-    },
-    {
       "name": "React.js",
       "level": "Intermedio",
       "keywords": ["Componentes", "Desarrollo Web", "Frontend", "Programación"]
