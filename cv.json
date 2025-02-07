@@ -117,24 +117,6 @@
         "Metodologías Ágiles",
         "Scrum"
       ]
-    },
-    {
-      "name": "Clase: Sistemas Expertos",
-      "position": "Estudiante",
-      "url": "",
-      "startDate": "2022-08-22",
-      "endDate": "2022-12-15",
-      "summary": "Clase en la UNAH, cree un proyecto desde cero. La arquitectura, el diseño, la base de datos, la programación y la documentación. Utilice terraform para la infraestructura y docker para los contenedores. El proyecto lo desplegue en Azure.",
-      "highlights": [
-        "Arquitectura de Proyectos",
-        "Diseño de Proyectos",
-        "Base de Datos",
-        "Programación de Proyectos",
-        "Documentación de Proyectos",
-        "Infraestructura",
-        "Contenedores",
-        "Despliegue en Azure"
-      ]
     }
   ],
   "volunteer": [
@@ -154,8 +136,8 @@
       "url": "https://www.unah.edu.hn/",
       "area": "Ingeniería en Sistemas",
       "studyType": "Bachelor",
-      "startDate": "2020-27-01",
-      "endDate": "2025-15-12",
+      "startDate": "2020-20-01",
+      "endDate": "2026",
       "score": "56",
       "courses": [""]
     }
@@ -335,15 +317,6 @@
       "description": "Proyecto de la clase Ingeniería de Software. Sistema de ventas de una tienda en linea. Diseñe, programe y documente el sistema. Utilice metodologías ágiles para el desarrollo del proyecto. es decir Scrum. frontend con React, backend con Node.js y base de datos con Microsoft SQL Server.",
       "highlights": ["Documentación", "Metodologías Ágiles", "Scrum", "programación Web", "Responsive", "Diseño de Interfaces", "Base de Datos", "Programación en React", "Programación en Node.js", "Microsoft SQL Server"],
       "url": ""
-    },
-    {
-      "name": "Smart Wallet",
-      "isActive": false,
-      "startDate": "2024-05-24",
-      "endDate": "2024-08-15",
-      "description": "Proyecto de Sistemas Expertos. Sistema de control de ingresos y egresos vinculado a cuentas bancarias y tarjetas mediante la API de Plaid. Se desarrolló desde cero, incluyendo la arquitectura, diseño, base de datos, programación y documentación. Se usó Terraform para la infraestructura, Docker, y se desplegó en Azure.",
-      "highlights": ["Arquitectura de Proyectos", "Diseño de Proyectos", "Base de Datos", "Programación de Proyectos", "Documentación de Proyectos", "Infraestructura", "Docker", "Despliegue en Azure", "RESTful API", "Plaid"],
-      "url": "https://smart-wallet-70l.pages.dev/"
     }
   ]
 }
