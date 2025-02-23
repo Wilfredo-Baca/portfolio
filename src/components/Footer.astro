@@ -1,12 +1,12 @@
 ---
-const today = new Date();
+const currentYear = new Date().getFullYear();
 ---
 
-<footer>
-	&copy; {today.getFullYear()} Wilfredo Baca. All rights reserved.
-	<div class="social-links">
-		<a href="https://x.com/wibadev" target="_blank">
-			<span class="sr-only">Ver el Twitter de Wilfredo Baca</span>
+<footer class="px-2- pt-4 pb-12 bg-gradient-to-b from-[rgba(229,233,240,0.5)] to-white text-center text-[#60739F]">
+  <p class="text-[#60739F] font-medium">&copy; {currentYear} Wilfredo Baca. All rights reserved.</p>
+  
+  <nav class="flex justify-center gap-4 mt-4" aria-label="Redes sociales">
+    <a href="https://x.com/wibadev" target="_blank" title="Ver el Twitter de Wilfredo Baca">
 			<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/twitter"
 				><path
 					fill="currentColor"
@@ -14,8 +14,7 @@ const today = new Date();
 				></path></svg
 			>
 		</a>
-		<a href="https://github.com/Wilfredo-Baca" target="_blank">
-			<span class="sr-only">Ir al GitHub de Wilfredo Baca</span>
+		<a href="https://github.com/Wilfredo-Baca" target="_blank" title="Ir al GitHub de Wilfredo Baca">
 			<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github"
 				><path
 					fill="currentColor"
@@ -23,26 +22,5 @@ const today = new Date();
 				></path></svg
 			>
 		</a>
-	</div>
+  </nav>
 </footer>
-<style>
-	footer {
-		padding: 2em 1em 4em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
-		text-align: center;
-	}
-	.social-links {
-		display: flex;
-		justify-content: center;
-		gap: 1em;
-		margin-top: 1em;
-	}
-	.social-links a {
-		text-decoration: none;
-		color: rgb(var(--gray));
-	}
-	.social-links a:hover {
-		color: rgb(var(--gray-dark));
-	}
-</style>
