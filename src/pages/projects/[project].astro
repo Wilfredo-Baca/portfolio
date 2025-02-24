@@ -1,0 +1,61 @@
+---
+import { projects, basics } from "../../../cv.json";
+import Layout from "@/layouts/Layout.astro";
+
+
+export function getStaticPaths() {
+  return projects.map(({ name }) => ({
+    params: {
+      project: name
+        .toLowerCase()
+        .replace(/\s/g, "-")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, ""),
+    },
+  }));
+}
+
+// current project
+const { project } = Astro.params;
+const currentProject = projects.find(
+  (p) =>
+    p.name
+      .toLowerCase()
+      .replace(/\s+/g, "-")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "") === project
+);
+const description = "Portafolio de " + basics.name + " - " + basics.label + ". " + basics.summary;
+---
+
+  <Layout title=`Portafolio de ${basics.name}` description=`${description}`>
+      <div class="bg-white shadow-lg rounded-lg p-6 max-w-2xl text-center my-6">
+            <img
+              src={currentProject?.image}
+              alt="Imagen del proyecto"
+              class="min-w-72 h-auto mx-auto mb-4 rounded-lg"
+            />
+            <h1 class="text-2xl font-bold text-gray-800">
+              {currentProject?.name}
+            </h1>
+            <p class="text-gray-600 mt-2">{currentProject?.description}</p>
+            <p class="text-sm text-gray-500 mt-2">
+              {currentProject?.startDate} - {currentProject?.endDate}
+            </p>
+            <div class="mt-4">
+              <h2 class="text-lg font-semibold text-gray-700">Destacados:</h2>
+              <ul class="list-disc list-inside text-gray-600">
+                {currentProject?.highlights.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+            {currentProject?.url && (
+              <a
+                href={currentProject?.url}
+                class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg"
+              >
+                Ver Proyecto
+              </a>
+            )}
+          </div>
